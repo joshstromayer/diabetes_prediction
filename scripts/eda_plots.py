@@ -111,3 +111,5 @@ df = pd.read_csv("encoded_data.csv")
 # plt.savefig("images/bgl_and_hb1ac_dense_violinplots.png")
 # plt.show()
 
+# found out that data is imbalanced, there are lot more people without diabetes than people with diabetes, 8.5:91.5.
+# this means that the model would overfit and needs to be balanced in order to have accuracy in different datasets.
