@@ -4,10 +4,10 @@ import seaborn as sns
 import numpy as np
 from sklearn.preprocessing import OneHotEncoder
 
-# df = pd.read_csv("diabetes_prediction_dataset.csv")
+df = pd.read_csv("data/diabetes_prediction_dataset.csv")
 
 # Encoding dataset to usable data
-"""
+
 df["smoking_history"] = df["smoking_history"].replace('No Info', np.nan)
 is_null = df.isnull().sum() 
 # print(is_null) # 35816 null values in smoking_history, 0 in rest. 
@@ -15,9 +15,10 @@ is_null = df.isnull().sum()
 df = pd.get_dummies(df, columns=["gender"])
 
 encoded_data = pd.get_dummies(df, columns=['smoking_history'])
-encoded_data.to_csv("encoded_data.csv", index=False)"""
+encoded_data.to_csv("encoded_data.csv", index=False)
 
-df = pd.read_csv("encoded_data.csv")
+
+df = pd.read_csv("data/encoded_data.csv")
 
 # corr = df.corr(numeric_only=True)
 # plt.figure(figsize=(10, 8))
@@ -75,7 +76,7 @@ df.drop(['gender_Female', 'gender_Male', 'gender_Other', 'smoking_history_curren
 # plt.savefig("images/boxplot_age.png")
 # plt.show()
 
-df = pd.read_csv("encoded_data.csv")
+df = pd.read_csv("data/encoded_data.csv")
 
 # fig, axs = plt.subplots(1, 2)
 # axs[0].set_title("Age Distribution")
@@ -93,6 +94,20 @@ df = pd.read_csv("encoded_data.csv")
 # plt.legend()
 # plt.savefig("images/age_and_bmi_dense_histograms.png")
 # plt.show()
+
+plt.title("Age Distribution")
+plt.xlabel("Age")
+plt.ylabel("Distribution")
+sns.histplot(data=df[df['diabetes'] == 1]['age'], label='Diabetic', bins=20, color='#a78cd9', stat='density')
+sns.histplot(data=df[df['diabetes'] == 0]['age'], label='Non-Diabetic', bins=20, color='#72bad5', stat='density')
+plt.show()
+
+plt.title("Age Distribution")
+plt.xlabel("Age")
+plt.ylabel("Distribution")
+sns.histplot(data=df[df['diabetes'] == 1]['age'], label='Diabetic', bins=20, color='#a78cd9')
+sns.histplot(data=df[df['diabetes'] == 0]['age'], label='Non-Diabetic', bins=20, color='#72bad5')
+plt.show()
 
 # fig, axs = plt.subplots(1, 2)
 # axs[0].set_title("Blood Glucose Levels Distribution")
