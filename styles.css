@@ -1,1 +1,277 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    
+    margin-bottom: 60px;
+
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    background-color: #f7fafc;
+    border-bottom: 2px solid #e2e8f0;
+
+    padding: 8px 0px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+
+    padding-right: 27px;
+
+    gap: 24px;
+
+    font-size: 15px;
+    font-family: sans-serif;
+
+}
+
+.links a{
+    text-decoration: none;
+    color: #1a202c;
+}
+
+.links a:hover{
+    color: #38a169;
+}
+
+#logo{
+    
+    padding-left: 15px;
+    padding-right: 20px;
+
+    font-size: 24px;
+    font-weight: bold;
+    color: #38a169;
+}
+
+#logo a{
+    text-decoration: none;
+    color: #38a169;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 50px;
+    padding-top: 10px;
+
+}
+
+#whatisdiabetes{
+    padding-top: 30px;
+    border-top: solid 1px #c3c8d0;
+
+    font-family: Barlow, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+}
+
+.subhead{
+    font-size: 25px;
+    font-family: Barlow, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+
+    color: #38a169;
+
+    /* Standard color is #363636 */
+}
+
+.riskfactor{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#p1{
+    padding-bottom: 20px;
+}
+
+#p2{
+    padding-bottom: 20px;
+}
+
+#p3{
+    padding-bottom: 20px;
+}
+
+#p4{
+    padding-bottom: 20px;
+}
+
+#p5{
+    padding-bottom: 20px;
+}
+
+#p6{
+    padding-bottom: 20px;
+}
+
+#calc{
+    border: solid 1px black;
+    padding: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+    background-color: #e6eaed;
+    font-family: Barlow, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+}
+
+.question{
+    padding-bottom: 20px;
+}
+
+button{
+    border-radius: 5px;
+    padding: 3px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.prevention{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+p{
+    color: #555;
+    font-family: Barlow, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+
+    font-size: 16px;
+}
+
+h3{
+    color: #363636;
+    font-family: Barlow, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    
+}
+
+.disclaimer{
+    font-size: 11px;
+}
+
+body{
+    margin: 0;
+}
+
+main{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.correlation{
+    font-size: 15px;
+}
+
+img{
+    border: solid 1px;
+    
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+
+#container1{
+    position: relative;
+}
+
+#figure1text{
+    position: absolute;
+
+    top: 60px;
+    right: 70px;
+
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#container2{
+    position: relative;
+}
+
+#figure2text{
+    position: absolute;
+
+    top: 60px;
+    right: 70px;
+
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}  
+
+#container3{
+    position: relative;
+}
+
+#figure3text{
+    position: absolute;
+
+    top: 60px;
+    right: 70px;
+
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}  
+
+#container4{
+    position: relative;
+}
+
+#figure4text{
+    position: absolute;
+
+    top: 60px;
+    right: 70px;
+
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}  
+
+#container5{
+    position: relative;
+}
+
+#figure5text{
+    position: absolute;
+
+    top: 60px;
+    right: 70px;
+
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}  
+
+#container6{
+    position: relative;
+}
+
+#figure6text{
+    position: absolute;
+
+    top: 60px;
+    right: 70px;
+
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.symptoms{
+    color: #555;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+
+    text-align: left;
+    justify-content: center;
+    padding-left: 15px;
+    line-height: 20px;
+}
